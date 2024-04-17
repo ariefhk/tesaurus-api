@@ -4,7 +4,7 @@
   "description": "",
   "main": "./dist/main.js",
   "scripts": {
-    "start": "tsc && node ./dist/main.js",
+    "start": "npx tsc && node ./dist/main.js",
     "dev": "nodemon ./src/main.ts",
     "test": "jest -i --no-cache --coverage --colors --verbose --detectOpenHandles --forceExit"
   },

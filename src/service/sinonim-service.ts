@@ -14,6 +14,6 @@ export class DictionaryService {
     const dictionary = new DictionaryRepository(dictionaryJson);
     const existedSinonim = dictionary.getSinonim(sinonim);
 
-    return Response.toJson(true, "Sukses mendapatkan sinonim", existedSinonim);
+    return Response.toJson(true, `Sukses mendapatkan sinonim kata ${sinonim}`, existedSinonim);
   }
 }
